@@ -27,7 +27,8 @@ namespace occ.Repositories
 
             if (toEdit == null) { return false; }
 
-            toEdit = vacation;
+            Vacations.Remove(toEdit);
+            Vacations.Add(vacation);
             return true;
         }
 
